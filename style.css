@@ -1,0 +1,48 @@
+ 
+body {
+   font-family: 'Inter', sans-serif;
+        @apply bg-zinc-950 text-white;
+}
+        /* Custom gradient for titles and some elements */
+        .hykrox-gradient {
+    background-image: linear-gradient(to right, #00A69D, #00C6B8);-webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+        /* Custom image filters for the images in the mock */
+    .image-filter {
+        filter: grayscale(100%) brightness(120%) contrast(150%) hue-rotate(180deg) saturate(150%);
+        
+}
+        .mySlides {display: none;}
+        img {vertical-align: middle;}
+        .slideshow-container {max-width: 1000px; position: relative; margin: auto;}
+        /* ...existing code... */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 12px 0;           /* เพิ่ม padding บน-ล่าง */
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;                 /* ชิดขอบล่างสุด */
+            width: 100%;
+            text-align: center;
+            background: rgba(0,0,0,0.6); /* พื้นหลังดำโปร่งแสงเต็มความกว้าง */
+            border-bottom-left-radius: 1.5rem;  /* ถ้ามี rounded-b-3xl ใน html */
+            border-bottom-right-radius: 1.5rem;
+        }
+/* ...existing code... */
+        .numbertext {color: #f2f2f2; font-size: 12px; padding: 8px 12px; position: absolute; top: 0;}
+        .dot {height: 15px; width: 15px; margin: 0 2px; background-color: #bbb; border-radius: 50%; display: inline-block; transition: background-color 0.6s ease;}
+        .active {background-color: #717171;}
+        .fade {animation-name: fade; animation-duration: 3s;}
+        @keyframes fade {from {opacity: .2} to {opacity: 1}}
+        @media only screen and (max-width: 300px) {.text {font-size: 11px}}
+
+.box {
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #293444 ;
+    border-radius: 10px;
+    box-shadow: 0 0.5px 3px white;
+}
